@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<style>
+.container{
+	width:90%;
+	margin:auto;
+}
+span[data-tooltip] {
+  position: relative;
+  text-decoration: underline;
+}
+span[data-tooltip]:hover::after{
+  content: attr(data-tooltip);
+	display: inline-block;
+	text-align: left;
+  position: absolute;
+  left: 70%;
+  bottom: -100%;
+  
+	height: 2rem;
+	width:100%;
+	margin: auto;
+  border-radius: 5px;
+  background-color: yellow;
+	color: #000000;
+  padding: 2px;
+  font-size: 14px;
+  z-index: 1;
+}
+/* 
+span[data-tooltip]:hover::after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-top: 2px solid orange;
+} */
+
+</style>
+<body>
+	<div class="container">
+		<p><span data-tooltip="temp">Lorem</span> ipsum dolor sit, amet consectetur <span data-tooltip="siham is the best">adipisicing</span> elit. Commodi sint a, iusto repellendus eaque cumque est nulla quis quos ipsum perferendis exercitationem tenetur vero sunt nisi quibusdam aperiam praesentium porro excepturi enim accusamus voluptatibus velit illo unde. Labore qui accusantium ullam perspiciatis, et non consequatur! Quisquam possimus repellendus beatae iste vitae eum ullam harum quo eligendi veritatis itaque corporis qui culpa esse, aut perferendis vel rerum amet dicta! Natus, voluptatibus rerum omnis eligendi quisquam vel fugiat nostrum alias nam, incidunt consectetur harum repudiandae recusandae! Voluptate non dicta minus at tempora, praesentium quam sit obcaecati numquam, <span data-tooltip="efkfsdlm dslmslm fsjb fslm lmdskf">similique </span>odio amet porro nulla!</p>
+	</div>
+	
+</body>
+</html>
