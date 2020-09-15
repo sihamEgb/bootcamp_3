@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	body{
+		color:white;
+		background-color: rgb(47, 68, 68);
+	}
+	h2{
+		text-align: center;
+	}
+	.group{
+		text-align: center;
+	}
+	.green{
+		background-color: rgba(0,128,0,1);
+		border-color: rgba(0,128,0,1);
+	}
+	.red{
+		background-color: red;
+		border-color: red;
+	}
+	.blue{
+		background-color: blue;
+		border-color: blue;
+	}
+	.orange{
+		background-color: orange;
+		border-color: orange;
+	}
+	.yellow{
+		background-color: yellow;
+		border-color: yellow;
+	}
+	.grey{
+		background-color: grey;
+		border-color: grey;
+	}
+	
+	.round{
+		border-radius: 20px;
+	}
+	.big{
+		font-size: 20px;
+	}
+	.medium{
+		font-size: 15px;
+	}
+	.small{
+		font-size: 10px;
+	}
+	
+	button{
+		border: 1px solid rgb(47, 68, 68);
+		color: #fff;
+		padding: 10px 30px;
+		margin: 10px;
+	}
+	.ghost{
+		background-color: transparent;
+	}
+		button:hover{
+		opacity: 0.8;
+	}
+	.ghost_g:hover{
+  	background-color: rgba(0,128,0,1);
+		border-color: rgba(0,128,0,1);
+	}
+	.ghost_blue:hover{
+  	background-color: blue;
+		border-color: blue;
+	}
+	.ghost_red:hover{
+  	background-color: red;
+		border-color: red;
+	}
+	.ghost_orange:hover{
+  	background-color: orange;
+		border-color: orange;
+	}
+	.ghost_yellow:hover{
+  	background-color: yellow;
+		border-color: yellow;
+	}
+	.ghost_grey:hover{
+  	background-color: grey;
+		border-color: grey;
+	}
+</style>
+<body>
+	
+	<div class="group">
+		<h2>Flat</h2>
+		<button class="flat green big" >Register</button>
+		<button class="flat red medium" >Clear</button>
+		<button class="flat blue small" >Submit</button>
+	</div>
+	<br>
+
+	<div class="group">
+		<h2>Round</h2>
+		<button class="round orange big" >Register</button>
+		<button class="round yellow medium" >Clear</button>
+		<button class="round grey small" >Submit</button>
+	</div>
+
+	<br>
+	<div class="group">
+		<h2>Round Ghost</h2>
+		<button class="flat green big ghost ghost_g" >Register</button>
+		<button class="flat red medium ghost ghost_red" >Clear</button>
+		<button class="flat blue small ghost ghost_blue" >Submit</button>
+	</div>
+
+	<div class="group">
+		<h2>Round Ghost</h2>
+		<button class="round orange big ghost ghost_orange" >Register</button>
+		<button class="round yellow medium ghost ghost_yellow" >Clear</button>
+		<button class="round grey small ghost ghost_grey" >Submit</button>
+	</div>
+	<div>
+
+	</div>
+
+	<div>
+
+	</div>
+</body>
+</html>
