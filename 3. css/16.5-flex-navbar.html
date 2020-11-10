@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.container{
+			border: solid 2px #d3d3d3;
+			background: #f4f4f4;
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+		}
+
+		.title{
+			/* background: green; */
+			text-align: center;
+			font-size: 4vw;
+			padding: 1rem;
+		}
+		nav{
+			width: 100%;
+			height: 10vh;
+			display: flex;
+    	justify-content: flex-end;
+    	align-items: flex-end;
+		}
+		li{
+			padding: 0.1rem;
+			margin: 0.5rem;
+			/* background: red; */
+			display: inline;
+		}
+	
+		ul{
+			list-style: none;
+			padding: 0;
+		}
+
+		/* mobile phones */
+    @media only screen and (max-width: 800px) {
+      
+			.container{
+				flex-direction: column;
+				width: 60vw;
+				margin:auto;
+			}
+			nav{
+				/* background-color: lightcoral; */
+				width: 50%;
+				margin:auto;
+				text-align: center;
+				height: auto;
+				flex-direction: column;
+	    	justify-content: center;
+    		align-items: center;
+
+			}
+			li{
+				display: block;
+				margin:auto;
+				text-align: center;
+				padding-left: 0;
+			}
+			
+
+    
+    }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			Appleseeds
+		</div>
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li>About</li>
+				<li>Portfolio</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+		
+	</div>
+	
+</body>
+</html>
